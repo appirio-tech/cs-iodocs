@@ -34,7 +34,7 @@
       "parameters" : [ {
         "Name" : "query",
         "Default" : "{\"name\": \"foo\"}",
-        "Type" : "string",
+        "Type" : "json object",
         "Description" : "query",
         "Required" : "N"
       } ],
@@ -63,7 +63,7 @@
       "parameters" : [ {
         "Name" : "query",
         "Default" : "{\"name\": \"foo\"}",
-        "Type" : "string",
+        "Type" : "json object",
         "Description" : "query",
         "Required" : "N"
       } ],
@@ -92,7 +92,7 @@
       "parameters" : [ {
         "Name" : "query",
         "Default" : "{\"name\": \"foo\"}",
-        "Type" : "string",
+        "Type" : "json object",
         "Description" : "query",
         "Required" : "N"
       } ],
