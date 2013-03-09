@@ -311,7 +311,8 @@ function processRequest(req, res, next) {
                 // If the param is actually a part of the URL, put it in the URL and remove the param
                 if (!!regx.test(methodURL)) {
                     methodURL = methodURL.replace(regx, params[param]);
-                    delete params[param]
+                    if (!(httpMethod == 'PUT' && param == 'id')) // don't remove id if PUT, need in body
+                      delete params[param]
                 }
             } else {
                 delete params[param]; // Delete blank params
@@ -340,8 +341,6 @@ function processRequest(req, res, next) {
         };
 
     if (['POST','DELETE','PUT'].indexOf(httpMethod) !== -1) {
-        if (httpMethod == 'PUT')
-          params.id = req.params.id;
         var requestBody = query.stringify(params);
         console.log('requestBody: ' + requestBody);
     }
