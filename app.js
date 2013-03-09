@@ -341,6 +341,7 @@ function processRequest(req, res, next) {
 
     if (['POST','DELETE','PUT'].indexOf(httpMethod) !== -1) {
         var requestBody = query.stringify(params);
+        console.log('requestBody: ' + requestBody);
     }
 
     if (apiConfig.oauth) {
