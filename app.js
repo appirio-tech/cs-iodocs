@@ -340,6 +340,8 @@ function processRequest(req, res, next) {
         };
 
     if (['POST','DELETE','PUT'].indexOf(httpMethod) !== -1) {
+        if (httpMethod == 'PUT')
+          params.id = req.params.id;
         var requestBody = query.stringify(params);
         console.log('requestBody: ' + requestBody);
     }
