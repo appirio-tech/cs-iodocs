@@ -24,6 +24,13 @@
         "Description" : "type",
         "Location" : "body",
         "Required" : "N"
+      }, {
+        "Name" : "questions",
+        "Default" : "[{\"longQuestion\": \"foo\", \"shortName\":\"bar\"}]",
+        "Type" : "array of json object",
+        "Description" : "questions",
+        "Location" : "body",
+        "Required" : "N"
       } ],
       "Synopsis" : "Create Survey",
       "HTTPMethod" : "POST",
