@@ -37,6 +37,47 @@
       "URI" : "/surveys",
       "RequiresOAuth" : "N"
     }, {
+      "MethodName" : "surveys/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the survey to update",
+        "Required" : "Y"
+      }, {
+        "Name" : "name",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "name",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "description",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "description",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "type",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "type",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "questions",
+        "Default" : "",
+        "Type" : "array of json object",
+        "Description" : "questions",
+        "Location" : "body",
+        "Required" : "N"
+      } ],
+      "Synopsis" : "Update Survey",
+      "HTTPMethod" : "PUT",
+      "URI" : "/surveys/:id",
+      "RequiresOAuth" : "N"
+    }, {
       "MethodName" : "surveys",
       "parameters" : [ {
         "Name" : "query",
@@ -128,6 +169,63 @@
       "Synopsis" : "Create ImageSet",
       "HTTPMethod" : "POST",
       "URI" : "/imagesets",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "imagesets/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the imageset to update",
+        "Required" : "Y"
+      }, {
+        "Name" : "name",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "name",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "description",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "description",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "tags",
+        "Default" : "",
+        "Type" : "array of string",
+        "Description" : "tags",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "status",
+        "Default" : "",
+        "Type" : "enumerated",
+        "Description" : "status",
+        "Location" : "body",
+        "Required" : "N",
+        "EnumeratedList" : [ "", "active", "disabled" ]
+      }, {
+        "Name" : "type",
+        "Default" : "",
+        "Type" : "enumerated",
+        "Description" : "type",
+        "Location" : "body",
+        "Required" : "N",
+        "EnumeratedList" : [ "", "Answer", "Profile", "WearTest" ]
+      }, {
+        "Name" : "images",
+        "Default" : "",
+        "Type" : "array of json object",
+        "Description" : "images",
+        "Location" : "body",
+        "Required" : "N"
+      } ],
+      "Synopsis" : "Update ImageSet",
+      "HTTPMethod" : "PUT",
+      "URI" : "/imagesets/:id",
       "RequiresOAuth" : "N"
     }, {
       "MethodName" : "imagesets",
@@ -254,6 +352,96 @@
       "Synopsis" : "Create Answer",
       "HTTPMethod" : "POST",
       "URI" : "/answers",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "answers/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the answer to update",
+        "Required" : "Y"
+      }, {
+        "Name" : "surveyId",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "surveyId",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "questionId",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "questionId",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "userId",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "userId",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "imageSetId",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "imageSetId",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "questionName",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "questionName",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "freeFormText",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "freeFormText",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "comment",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "comment",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "scalarValue",
+        "Default" : "",
+        "Type" : "number",
+        "Description" : "scalarValue",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "scalarValueText",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "scalarValueText",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "scalarRangeBottom",
+        "Default" : "",
+        "Type" : "number",
+        "Description" : "scalarRangeBottom",
+        "Location" : "body",
+        "Required" : "N"
+      }, {
+        "Name" : "scalarRangeTop",
+        "Default" : "",
+        "Type" : "number",
+        "Description" : "scalarRangeTop",
+        "Location" : "body",
+        "Required" : "N"
+      } ],
+      "Synopsis" : "Update Answer",
+      "HTTPMethod" : "PUT",
+      "URI" : "/answers/:id",
       "RequiresOAuth" : "N"
     }, {
       "MethodName" : "answers",
