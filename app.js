@@ -289,11 +289,11 @@ function processRequest(req, res, next) {
         key = req.sessionID + ':' + apiName;
 
     // Extract custom headers from the params
-    for( var param in params ) 
+    for( var param in params )
     {
-         if (params.hasOwnProperty(param)) 
+         if (params.hasOwnProperty(param))
          {
-            if (params[param] !== '' && locations[param] == 'header' ) 
+            if (params[param] !== '' && locations[param] == 'header' )
             {
                 customHeaders[param] = params[param];
                 delete params[param];
@@ -367,7 +367,7 @@ function processRequest(req, res, next) {
                     console.log(apiSecret);
                     console.log(accessToken);
                     console.log(accessTokenSecret);
-                    
+
                     var oa = new OAuth(apiConfig.oauth.requestURL || null,
                                        apiConfig.oauth.accessURL || null,
                                        apiKey || null,
@@ -648,7 +648,7 @@ app.dynamicHelpers({
                     req.params.api = pathName;
                 }
             });
-        }       
+        }
         // If the cookie says we're authed for this particular API, set the session to authed as well
         if (req.params.api && req.session[req.params.api] && req.session[req.params.api]['authed']) {
             req.session['authed'] = true;
@@ -680,9 +680,12 @@ app.dynamicHelpers({
 // Routes
 //
 app.get('/', function(req, res) {
+    res.redirect('/weartest');
+    /*
     res.render('listAPIs', {
         title: config.title
     });
+    */
 });
 
 // Process the API request
