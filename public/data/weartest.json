@@ -8,18 +8,21 @@
         "Default" : "",
         "Type" : "string",
         "Description" : "name",
+        "Location" : "body",
         "Required" : "N"
       }, {
         "Name" : "description",
         "Default" : "",
         "Type" : "string",
         "Description" : "description",
+        "Location" : "body",
         "Required" : "N"
       }, {
         "Name" : "type",
         "Default" : "",
         "Type" : "string",
         "Description" : "type",
+        "Location" : "body",
         "Required" : "N"
       } ],
       "Synopsis" : "Create Survey",
