@@ -62,6 +62,19 @@
       "HTTPMethod" : "GET",
       "URI" : "/surveys/:id",
       "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "surveys/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the survey to delete",
+        "Required" : "Y"
+      } ],
+      "Synopsis" : "Delete Survey",
+      "HTTPMethod" : "DELETE",
+      "URI" : "/surveys/:id",
+      "RequiresOAuth" : "N"
     } ]
   }, {
     "name" : "ImageSet Resources",
@@ -140,6 +153,19 @@
       } ],
       "Synopsis" : "Get ImageSet",
       "HTTPMethod" : "GET",
+      "URI" : "/imagesets/:id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "imagesets/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the imageset to delete",
+        "Required" : "Y"
+      } ],
+      "Synopsis" : "Delete Survey",
+      "HTTPMethod" : "DELETE",
       "URI" : "/imagesets/:id",
       "RequiresOAuth" : "N"
     } ]
@@ -253,6 +279,19 @@
       } ],
       "Synopsis" : "Get Answer",
       "HTTPMethod" : "GET",
+      "URI" : "/answers/:id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "answers/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the answer to delete",
+        "Required" : "Y"
+      } ],
+      "Synopsis" : "Delete Answer",
+      "HTTPMethod" : "DELETE",
       "URI" : "/answers/:id",
       "RequiresOAuth" : "N"
     } ]
