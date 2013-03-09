@@ -1,0 +1,115 @@
+{
+  "endpoints" : [ {
+    "name" : "Survey Resources",
+    "methods" : [ {
+      "MethodName" : "surveys",
+      "parameters" : [ {
+        "Name" : "name",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "name",
+        "Required" : "N"
+      }, {
+        "Name" : "description",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "description",
+        "Required" : "N"
+      }, {
+        "Name" : "type",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "type",
+        "Required" : "N"
+      } ],
+      "Synopsis" : "Create Survey",
+      "HTTPMethod" : "POST",
+      "URI" : "/surveys",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "surveys",
+      "parameters" : [ {
+        "Name" : "query",
+        "Default" : "{\"name\": \"foo\"}",
+        "Type" : "string",
+        "Description" : "query",
+        "Required" : "N"
+      } ],
+      "Synopsis" : "Get Surveys",
+      "HTTPMethod" : "GET",
+      "URI" : "/surveys",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "surveys/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the survey to look for",
+        "Required" : "Y"
+      } ],
+      "Synopsis" : "Get Survey",
+      "HTTPMethod" : "GET",
+      "URI" : "/surveys/:id",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "ImageSet Resources",
+    "methods" : [ {
+      "MethodName" : "imagesets",
+      "parameters" : [ {
+        "Name" : "query",
+        "Default" : "{\"name\": \"foo\"}",
+        "Type" : "string",
+        "Description" : "query",
+        "Required" : "N"
+      } ],
+      "Synopsis" : "Get ImageSets",
+      "HTTPMethod" : "GET",
+      "URI" : "/imagesets",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "imagesets/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the imageset to look for",
+        "Required" : "Y"
+      } ],
+      "Synopsis" : "Get ImageSet",
+      "HTTPMethod" : "GET",
+      "URI" : "/imagesets/:id",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Answer Resources",
+    "methods" : [ {
+      "MethodName" : "answers",
+      "parameters" : [ {
+        "Name" : "query",
+        "Default" : "{\"name\": \"foo\"}",
+        "Type" : "string",
+        "Description" : "query",
+        "Required" : "N"
+      } ],
+      "Synopsis" : "Get Answers",
+      "HTTPMethod" : "GET",
+      "URI" : "/answers",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "answers/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "id of the answer to look for",
+        "Required" : "Y"
+      } ],
+      "Synopsis" : "Get Answer",
+      "HTTPMethod" : "GET",
+      "URI" : "/answers/:id",
+      "RequiresOAuth" : "N"
+    } ]
+  } ]
+}

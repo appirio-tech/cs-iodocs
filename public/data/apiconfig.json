@@ -1,4 +1,12 @@
 {
+    "weartest": {
+         "name": "WearTest API",
+         "protocol": "http",
+         "baseURL": "agile-depths-4505.herokuapp.com",
+         "publicPath": "",
+         "auth": "",
+         "keyParam": ""
+    },
     "klout": {
         "name": "Klout API",
         "protocol": "http",
