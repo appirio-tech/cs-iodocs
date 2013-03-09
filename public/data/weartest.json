@@ -199,14 +199,14 @@
       }, {
         "Name" : "scalarValue",
         "Default" : "",
-        "Type" : "string",
+        "Type" : "number",
         "Description" : "scalarValue",
         "Location" : "body",
         "Required" : "N"
       }, {
         "Name" : "scalarValueText",
         "Default" : "",
-        "Type" : "number",
+        "Type" : "string",
         "Description" : "scalarValueText",
         "Location" : "body",
         "Required" : "N"
@@ -233,7 +233,7 @@
       "MethodName" : "answers",
       "parameters" : [ {
         "Name" : "query",
-        "Default" : "{\"name\": \"foo\"}",
+        "Default" : "{\"questionName\": \"foo\"}",
         "Type" : "json object",
         "Description" : "query",
         "Required" : "N"
