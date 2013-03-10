@@ -341,6 +341,7 @@ function processRequest(req, res, next) {
         };
 
     if (['POST','DELETE','PUT'].indexOf(httpMethod) !== -1) {
+        console.log('params: ' + JSON.stringify(params));
         var requestBody = query.stringify(params);
         console.log('requestBody: ' + requestBody);
     }
