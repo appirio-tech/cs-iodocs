@@ -26,7 +26,7 @@
         "Required" : "N"
       }, {
         "Name" : "questions",
-        "Default" : "",
+        "Default" : "[{\"longQuestion\": \"How old are you?\", \"shortName\": \"age\", \"type\": \"\", \"options\": {\"scaleFromValue\": 0, \"scaleFromText\": \"\", \"scaleToValue\": 0, \"scaleToText\": \"\", \"showCommentFlag\": false, \"requiredFlag\": false, \"values\": []}, \"averageScalarValue\": 0}]",
         "Type" : "array of json object",
         "Description" : "questions",
         "Location" : "body",
@@ -67,7 +67,7 @@
         "Required" : "N"
       }, {
         "Name" : "questions",
-        "Default" : "",
+        "Default" : "[{\"_id\": \"\", \"longQuestion\": \"How old are you?\", \"shortName\": \"age\", \"type\": \"\", \"options\": {\"scaleFromValue\": 0, \"scaleFromText\": \"\", \"scaleToValue\": 0, \"scaleToText\": \"\", \"showCommentFlag\": false, \"requiredFlag\": false, \"values\": []}, \"averageScalarValue\": 0}]",
         "Type" : "array of json object",
         "Description" : "questions",
         "Location" : "body",
@@ -137,7 +137,7 @@
         "Required" : "N"
       }, {
         "Name" : "tags",
-        "Default" : "",
+        "Default" : "[\"foo\", \"bar\"]",
         "Type" : "array of string",
         "Description" : "tags",
         "Location" : "body",
@@ -160,7 +160,7 @@
         "EnumeratedList" : [ "", "Answer", "Profile", "WearTest" ]
       }, {
         "Name" : "images",
-        "Default" : "",
+        "Default" : "[{\"name\": \"\", \"description\": \"\", \"tags\": [\"foo\", \"bar\"], \"url\": \"\", \"height\": 0, \"width\": 0}]",
         "Type" : "array of json object",
         "Description" : "images",
         "Location" : "body",
@@ -194,7 +194,7 @@
         "Required" : "N"
       }, {
         "Name" : "tags",
-        "Default" : "",
+        "Default" : "[\"foo\", \"bar\"]",
         "Type" : "array of string",
         "Description" : "tags",
         "Location" : "body",
@@ -217,7 +217,7 @@
         "EnumeratedList" : [ "", "Answer", "Profile", "WearTest" ]
       }, {
         "Name" : "images",
-        "Default" : "",
+        "Default" : "[{\"_id\": \"\", \"name\": \"\", \"description\": \"\", \"tags\": [\"foo\", \"bar\"], \"url\": \"\", \"height\": 0, \"width\": 0}]",
         "Type" : "array of json object",
         "Description" : "images",
         "Location" : "body",
