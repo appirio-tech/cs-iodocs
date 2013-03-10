@@ -342,6 +342,8 @@ function processRequest(req, res, next) {
 
     if (['POST','DELETE','PUT'].indexOf(httpMethod) !== -1) {
         var requestBody = JSON.stringify(params);
+        requestBody = requestBody.replace('"[', '[');
+        requestBody = requestBody.replace(']"', ']');
         console.log('requestBody: ' + requestBody);
     }
 
