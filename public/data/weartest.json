@@ -268,6 +268,23 @@
       "RequiresOAuth" : "N"
     } ]
   }, {
+    "name" : "Image Resources",
+    "methods" : [ {
+      "MethodName" : "images",
+      "parameters" : [ {
+        "Name" : "body",
+        "Default" : "",
+        "Type" : "multipart/form-data",
+        "Description" : "upload multipart/form-data",
+        "Location" : "body",
+        "Required" : "N"
+      } ],
+      "Synopsis" : "Create Image",
+      "HTTPMethod" : "POST",
+      "URI" : "/images",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
     "name" : "Answer Resources",
     "methods" : [ {
       "MethodName" : "answers",
