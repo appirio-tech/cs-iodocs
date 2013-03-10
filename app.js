@@ -341,8 +341,7 @@ function processRequest(req, res, next) {
         };
 
     if (['POST','DELETE','PUT'].indexOf(httpMethod) !== -1) {
-        console.log('params: ' + JSON.stringify(params));
-        var requestBody = query.stringify(params);
+        var requestBody = JSON.stringify(params);
         console.log('requestBody: ' + requestBody);
     }
 
@@ -558,7 +557,7 @@ function processRequest(req, res, next) {
         }
 
         if (!options.headers['Content-Type'] && requestBody) {
-            options.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+            options.headers['Content-Type'] = 'application/json';
         }
 
         if (config.debug) {
