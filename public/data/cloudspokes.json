@@ -1,6 +1,6 @@
 {
   "endpoints" : [ {
-    "name" : "Member Resources",
+    "name" : "Members",
     "methods" : [ {
       "MethodName" : "members",
       "parameters" : [ {
@@ -340,7 +340,7 @@
       "RequiresOAuth" : "N"
     } ]
   }, {
-    "name" : "Account Resources",
+    "name" : "Accounts",
     "methods" : [ {
       "MethodName" : "accounts/authenticate",
       "parameters" : [ {
@@ -791,7 +791,7 @@
       "RequiresOAuth" : "N"
     } ]
   }, {
-    "name" : "Preference Resources",
+    "name" : "Preferences",
     "methods" : [ {
       "MethodName" : "preferences/:membername",
       "parameters" : [ {
@@ -843,7 +843,7 @@
       "RequiresOAuth" : "N"
     } ]
   }, {
-    "name" : "Challenge Resources",
+    "name" : "Challenges",
     "methods" : [ {
       "MethodName" : "challenges",
       "parameters" : [ {
