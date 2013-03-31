@@ -1070,6 +1070,244 @@
       "Synopsis" : "Returns a specific challenge, categories, prizes and terms",
       "URI" : "/challenges/:challenge_id",
       "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "{\"challenge\": {\"detail\": {}}}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "PUT",
+      "Synopsis" : "Updates an existing challenge",
+      "URI" : "/challenges/:challenge_id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id/comments",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a collection of comments for a challenge",
+      "URI" : "/challenges/:challenge_id/comments",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id/participants",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a collection of participants for a challenge",
+      "URI" : "/challenges/:challenge_id/participants",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id/scorecards",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a collection of scorecards for a challenge",
+      "URI" : "/challenges/:challenge_id/scorecards",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id/scorecard",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns the scorecard for a challenge",
+      "URI" : "/challenges/:challenge_id/scorecard",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id/submission_deliverables",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a collection of submissions for a challenge",
+      "URI" : "/challenges/:challenge_id/submission_deliverables",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id/survey",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "{\"compete_again\": \"\", \"prize_money\": \"\", \"requirements\": \"\", \"timeframe\": \"\", \"why_no_submission\": \"\", \"improvements\": \"\"}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Creates a new survey for a challenge",
+      "URI" : "/challenges/:challenge_id/survey",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id/comment",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "{\"membername\": \"\", \"challenge_id\": \"\", \"comments\": \"\", \"reply_to\": \"\"}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Creates a new discussion board comment for the challenge",
+      "URI" : "/challenges/:challenge_id/comment",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "challenges/:challenge_id/admin",
+      "parameters" : [ {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a specific challenge, categories, prizes and terms for an admin",
+      "URI" : "/challenges/:challenge_id/admin",
+      "RequiresOAuth" : "N"
     } ]
   } ]
 }
