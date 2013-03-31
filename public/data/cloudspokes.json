@@ -327,13 +327,6 @@
         "Required" : "Y",
         "Description" : "authorization"
       }, {
-        "Name" : "data",
-        "Default" : "",
-        "Location" : "body",
-        "Type" : "json object",
-        "Required" : "Y",
-        "Description" : "data"
-      }, {
         "Name" : "oauth_token",
         "Default" : "",
         "Location" : "header",
