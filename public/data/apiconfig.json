@@ -1,9 +1,9 @@
 {
-    "weartest": {
-         "name": "WearTest API",
+    "cloudspokes": {
+         "name": "CloudSpokes API",
          "protocol": "http",
-         "baseURL": "agile-depths-4505.herokuapp.com",
-         "publicPath": "",
+         "baseURL": "api-sandbox.cloudspokes.com",
+         "publicPath": "/v1",
          "auth": "",
          "keyParam": ""
     },

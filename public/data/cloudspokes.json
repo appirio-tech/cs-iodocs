@@ -1,0 +1,356 @@
+{
+  "endpoints" : [ {
+    "name" : "Member Resources",
+    "methods" : [ {
+      "MethodName" : "members",
+      "parameters" : [ {
+        "Name" : "fields",
+        "Default" : "id,name,profile_pic__c,summary_bio__c,challenges_entered__c,active_challenges__c,total_wins__c,total_1st_place__c,total_2nd_place__c,total_3st_place__c,total_public_money__c",
+        "Location" : "query string",
+        "Type" : "enumerated",
+        "Required" : "N",
+        "Description" : "fields",
+        "EnumeratedList" : [ "" ]
+      }, {
+        "Name" : "order_by",
+        "Default" : "total_wins__c desc",
+        "Location" : "query string",
+        "Type" : "enumerated",
+        "Required" : "N",
+        "Description" : "order by",
+        "EnumeratedList" : [ "", "active_challenges__c desc", "challenges_entered__c desc", "id", "name", "profile_pic__c", "summary_bio__c", "total_1st_place__c desc", "total_2nd_place__c desc", "total_3st_place__c desc", "total_public_money__c desc", "total_wins__c desc" ]
+      }, {
+        "Name" : "limit",
+        "Default" : "25",
+        "Location" : "query string",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "limit"
+      }, {
+        "Name" : "offset",
+        "Default" : "0",
+        "Location" : "query string",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "offset"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all members",
+      "URI" : "/members",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/search",
+      "parameters" : [ {
+        "Name" : "keyword",
+        "Default" : "",
+        "Location" : "query string",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "keyword"
+      }, {
+        "Name" : "fields",
+        "Default" : "id,name,profile_pic__c,summary_bio__c,challenges_entered__c,active_challenges__c,total_wins__c,total_1st_place__c,total_2nd_place__c,total_3st_place__c,total_public_money__c",
+        "Location" : "query string",
+        "Type" : "enumerated",
+        "Required" : "N",
+        "Description" : "fields",
+        "EnumeratedList" : [ "" ]
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Searches for a member by keyword",
+      "URI" : "/members/search",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername/challenges",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all of the challenges that a member has been involved in",
+      "URI" : "/members/:membername/challenges",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername/challenges_as_admin",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all of the challenges the member has been judge, contact or notifier",
+      "URI" : "/members/:membername/challenges_as_admin",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername/payments",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "fields",
+        "Default" : "id,name,challenge__r.name,challenge__r.challenge_id__c,money__c,place__c,reason__c,status__c,type__c,Reference_Number__c,payment_sent__c",
+        "Location" : "query string",
+        "Type" : "enumerated",
+        "Required" : "N",
+        "Description" : "fields",
+        "EnumeratedList" : [ "" ]
+      }, {
+        "Name" : "order_by",
+        "Default" : "id",
+        "Location" : "query string",
+        "Type" : "enumerated",
+        "Required" : "N",
+        "Description" : "order by",
+        "EnumeratedList" : [ "" ]
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all payments for a member",
+      "URI" : "/members/:membername/payments",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername/referrals",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all member referrals for a member",
+      "URI" : "/members/:membername/referrals",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername/recommendations",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "fields",
+        "Default" : "recommendation_from__r.name,recommendation_from__r.profile_pic__c,recommendation__c,createddate",
+        "Location" : "query string",
+        "Type" : "enumerated",
+        "Required" : "N",
+        "Description" : "fields",
+        "EnumeratedList" : [ "" ]
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns the recommendations for a member",
+      "URI" : "/members/:membername/recommendations",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername/recommendations/create",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "recommendation_from_username",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "recommendation from username"
+      }, {
+        "Name" : "recommendation_text",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "recommendation text"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Creates a recommendation for the specified member",
+      "URI" : "/members/:membername/recommendations/create",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername/login_type",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns the login type for a member",
+      "URI" : "/members/:membername/login_type",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "fields",
+        "Default" : "id,name,school__c,years_of_experience__c,gender__c,time_zone__c,profile_pic__c,country__c,summary_bio__c,quote__c,challenges_entered__c,total_public_money__c,website__c,twitter__c,linkedin__c,icq__c,jabber__c,github__c,facebook__c,digg__c,myspace__c,total_wins__c,total_points__c,total_1st_place__c,total_2nd_place__c,total_3st_place__c,valid_submissions__c,badgeville_id__c,active_challenges__c",
+        "Location" : "query string",
+        "Type" : "enumerated",
+        "Required" : "N",
+        "Description" : "fields",
+        "EnumeratedList" : [ "" ]
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all data for the specified user. This includes their member info, challenges they've been involved in and their recommendations",
+      "URI" : "/members/:membername",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "members/:membername",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "PUT",
+      "Synopsis" : "Updates a member's info",
+      "URI" : "/members/:membername",
+      "RequiresOAuth" : "N"
+    } ]
+  } ]
+}

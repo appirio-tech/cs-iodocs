@@ -685,7 +685,7 @@ app.dynamicHelpers({
 // Routes
 //
 app.get('/', function(req, res) {
-    res.redirect('/weartest');
+    res.redirect('/cloudspokes');
     /*
     res.render('listAPIs', {
         title: config.title
