@@ -342,8 +342,10 @@ function processRequest(req, res, next) {
 
     if (['POST','DELETE','PUT'].indexOf(httpMethod) !== -1) {
         var requestBody = JSON.stringify(params);
-        requestBody = requestBody.replace(/"\[/g, '['); // "[ -> [
-        requestBody = requestBody.replace(/\]"/g, ']'); // ]" -> ]
+        requestBody = requestBody.replace(/"{/g, '{'); // "{ -> {
+        requestBody = requestBody.replace(/}"/g, '}'); // }" -> }
+//        requestBody = requestBody.replace(/"\[/g, '['); // "[ -> [
+//        requestBody = requestBody.replace(/\]"/g, ']'); // ]" -> ]
         requestBody = requestBody.replace(/\\"/g, '"'); // \" -> "
         console.log('requestBody: ' + requestBody);
     }
