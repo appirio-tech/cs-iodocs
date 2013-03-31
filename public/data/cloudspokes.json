@@ -132,7 +132,7 @@
         "Description" : "authorization"
       }, {
         "Name" : "fields",
-        "Default" : "id,name,challenge__r.name,challenge__r.challenge_id,money,place,reason,status,type,Reference_Number,payment_sent",
+        "Default" : "",
         "Location" : "query string",
         "Type" : "string",
         "Required" : "N",
@@ -195,7 +195,7 @@
         "Description" : "membername"
       }, {
         "Name" : "fields",
-        "Default" : "recommendation_from__r.name,recommendation_from__r.profile_pic,recommendation,createddate",
+        "Default" : "",
         "Location" : "query string",
         "Type" : "string",
         "Required" : "N",
