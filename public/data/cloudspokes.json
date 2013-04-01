@@ -848,7 +848,7 @@
       "MethodName" : "challenges",
       "parameters" : [ {
         "Name" : "open",
-        "Default" : "TRUE",
+        "Default" : "true",
         "Location" : "query string",
         "Type" : "enumerated",
         "Required" : "N",
@@ -1052,7 +1052,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "admin",
-        "Default" : "FALSE",
+        "Default" : "false",
         "Location" : "query string",
         "Type" : "enumerated",
         "Required" : "N",
