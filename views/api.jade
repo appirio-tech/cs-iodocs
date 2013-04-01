@@ -1,4 +1,16 @@
-h1=apiInfo.name 
+h1(class=apiName)
+  a(href='/',id='logo')=apiInfo.name
+  - if (apiName == 'cloudspokes')
+    a(href='http://www.cloudspokes.com',class='menu') Home
+    a(href='http://www.cloudspokes.com/community',class='menu') Community
+    a(href='http://www.cloudspokes.com/challenges',class='menu') Challenges
+    a(href='http://www.cloudspokes.com/leaderboard',class='menu') Leaderboard
+    a(href='http://www.cloudspokes.com/badges',class='menu') Badges
+    a(href='http://blog.cloudspokes.com/',class='menu') Blog
+    a(href='http://www.cloudspokes.com/help',class='menu') Help
+    a(href='http://www.cloudspokes.com/forums',class='menu') Forums
+    a(href='http://www.cloudspokes.com/account',class='menu') Account
+
 - if (session.authed && apiInfo.oauth && apiInfo.oauth.type =='three-legged')
     - var authed ='authed'
 - else
@@ -7,7 +19,7 @@ h1=apiInfo.name
 
 form#credentials
     input(type='hidden', name='apiName', value=apiName)
-    - if (apiInfo.auth) 
+    - if (apiInfo.auth)
         section(class='credentials ' + authed)
          - if (authed && apiInfo.oauth)
              span Authenticated with OAuth
@@ -103,7 +115,7 @@ ul
                                                       - if (parameter.Type =='enumerated')
                                                           select(name='params[' + parameter.Name + ']', placeholder=className)
                                                             - if (parameter.Default =='')
-                                                                option(value='') 
+                                                                option(value='')
                                                             - each choice in parameter.EnumeratedList
                                                                 - if (parameter.Default ==choice)
                                                                         option(value=choice, selected=true) #{choice}
@@ -112,7 +124,7 @@ ul
                                                       - else if (parameter.Type =='boolean')
                                                            select(name='params[' + parameter.Name + ']', placeholder=className)
                                                                 - if (parameter.Default =='')
-                                                                        option(value='') 
+                                                                        option(value='')
                                                                 - each choice in [apiInfo.booleanTrueVal,apiInfo.booleanFalseVal]
                                                                    - if (parameter.Default ==choice)
                                                                            option(value=choice, selected=true) #{choice}
