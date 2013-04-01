@@ -327,6 +327,83 @@
         "Required" : "Y",
         "Description" : "authorization"
       }, {
+        "Name" : "active_challenges",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "active challenges"
+      }, {
+        "Name" : "challenges_entered",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "challenges entered"
+      }, {
+        "Name" : "profile_pic",
+        "Default" : "http://cs-public.s3.amazonaws.com/default_appirio_member_image.png",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "profile pic"
+      }, {
+        "Name" : "time_zone",
+        "Default" : "Pacific Time (US & Canada)",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "time zone"
+      }, {
+        "Name" : "total_1st_place",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "total 1st place"
+      }, {
+        "Name" : "total_2nd_place",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "total 2nd place"
+      }, {
+        "Name" : "total_3st_place",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "total 3st place"
+      }, {
+        "Name" : "total_points",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "total points"
+      }, {
+        "Name" : "total_public_money",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "total public money"
+      }, {
+        "Name" : "total_wins",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "total wins"
+      }, {
+        "Name" : "valid_submissions",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "valid submissions"
+      }, {
         "Name" : "oauth_token",
         "Default" : "",
         "Location" : "header",
@@ -401,7 +478,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "Activates an accounts",
+      "Synopsis" : "Activates an account",
       "URI" : "/accounts/activate/:membername",
       "RequiresOAuth" : "N"
     }, {
@@ -527,7 +604,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "Finds a user by their membername and service ('cloudspokes' or third party)",
+      "Synopsis" : "Finds a user by their membername and service (\"cloudspokes\" or third party)",
       "URI" : "/accounts/find_by_service",
       "RequiresOAuth" : "N"
     }, {
@@ -583,7 +660,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "DEPRECATED: Creates a passcode in salesforce for resetting a member's password and sends email via Apex. Only works if member is using CloudSpokes to manage their account",
+      "Synopsis" : "DEPRECATED: Creates a passcode in Salesforce for resetting a member's password and sends email via Apex. Only works if member is using CloudSpokes to manage their account",
       "URI" : "/accounts/reset_password/:membername",
       "RequiresOAuth" : "N"
     }, {
@@ -625,7 +702,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "PUT",
-      "Synopsis" : "DEPRECATED: Resets a member's password in salesforce is CloudSpokes if managing their account",
+      "Synopsis" : "DEPRECATED: Resets a member's password in Salesforce if CloudSpokes is managing their account",
       "URI" : "/accounts/update_password/:membername",
       "RequiresOAuth" : "N"
     }, {
@@ -660,7 +737,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "PUT",
-      "Synopsis" : "Updates a member's passcode in salesforce with token from devise",
+      "Synopsis" : "Updates a member's passcode in Salesforce with token from Devise",
       "URI" : "/accounts/update_password_token/:membername",
       "RequiresOAuth" : "N"
     }, {
@@ -702,7 +779,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "PUT",
-      "Synopsis" : "Resets a member's password in salesforce if CloudSpokes is managing their account",
+      "Synopsis" : "Resets a member's password in Salesforce if CloudSpokes is managing their account",
       "URI" : "/accounts/change_password_with_token/:membername",
       "RequiresOAuth" : "N"
     }, {
@@ -1986,7 +2063,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "Reserves a sfdc server for a member",
+      "Synopsis" : "Reserves a SFDC server for a member",
       "URI" : "/squirrelforce/reserve_server",
       "RequiresOAuth" : "N"
     }, {
@@ -2007,7 +2084,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "Releases a sfdc server previously reserved for a member",
+      "Synopsis" : "Releases a SFDC server previously reserved for a member",
       "URI" : "/squirrelforce/release_server",
       "RequiresOAuth" : "N"
     }, {
