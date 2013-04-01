@@ -848,7 +848,7 @@
       "MethodName" : "challenges",
       "parameters" : [ {
         "Name" : "open",
-        "Default" : "true",
+        "Default" : "TRUE",
         "Location" : "query string",
         "Type" : "enumerated",
         "Required" : "N",
@@ -1052,7 +1052,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "admin",
-        "Default" : "false",
+        "Default" : "FALSE",
         "Location" : "query string",
         "Type" : "enumerated",
         "Required" : "N",
@@ -1307,6 +1307,1118 @@
       "HTTPMethod" : "GET",
       "Synopsis" : "Returns a specific challenge, categories, prizes and terms for an admin",
       "URI" : "/challenges/:challenge_id/admin",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Participants",
+    "methods" : [ {
+      "MethodName" : "participants/:participant_id",
+      "parameters" : [ {
+        "Name" : "participant_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "participant_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a specific participant",
+      "URI" : "/participants/:participant_id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns the status for a member for a challenge",
+      "URI" : "/participants/:membername/:challenge_id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "fields",
+        "Default" : "{}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "N",
+        "Description" : "fields"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Creates a new challenge participant record",
+      "URI" : "/participants/:membername/:challenge_id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "fields",
+        "Default" : "{}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "fields"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "PUT",
+      "Synopsis" : "Updates an existing challenge participant record",
+      "URI" : "/participants/:membername/:challenge_id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id/deliverables",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all deliverables for a participant",
+      "URI" : "/participants/:membername/:challenge_id/deliverables",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id/deliverables",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "{}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Creates a new deliverable for a participant",
+      "URI" : "/participants/:membername/:challenge_id/deliverables",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id/deliverables",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "{}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "PUT",
+      "Synopsis" : "Updates a deliverable for a participant",
+      "URI" : "/participants/:membername/:challenge_id/deliverables",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id/current_submssions",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "TEMP",
+      "URI" : "/participants/:membername/:challenge_id/current_submssions",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id/delete_submission_url_file",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "submission_id",
+        "Default" : "",
+        "Location" : "query string",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "submission id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "TEMP",
+      "URI" : "/participants/:membername/:challenge_id/delete_submission_url_file",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id/submission_url_file",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "link",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "link"
+      }, {
+        "Name" : "type",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "type"
+      }, {
+        "Name" : "comments",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "comments"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "TEMP",
+      "URI" : "/participants/:membername/:challenge_id/submission_url_file",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "participants/:membername/:challenge_id/submission/:submission_id",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge_id"
+      }, {
+        "Name" : "submission_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "submission_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "TEMP",
+      "URI" : "/participants/:membername/:challenge_id/submission/:submission_id",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Private Messages",
+    "methods" : [ {
+      "MethodName" : "messages",
+      "parameters" : [ {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "{\"from\": \"\", \"to\": \"\", \"subject\": \"\", \"body\": \"\"}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Creates a private message",
+      "URI" : "/messages",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "messages/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a specific private message",
+      "URI" : "/messages/:id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "messages/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "{\"from\": \"\", \"to\": \"\", \"subject\": \"\", \"body\": \"\"}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "PUT",
+      "Synopsis" : "Updates a specific private message",
+      "URI" : "/messages/:id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "messages/:id/reply",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "data",
+        "Default" : "{\"from\": \"\", \"body\": \"\"}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "data"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Reply to a specific private message",
+      "URI" : "/messages/:id/reply",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "messages/inbox/:membername",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns messages from a member's inbox",
+      "URI" : "/messages/inbox/:membername",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "messages/to/:membername",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns messages sent to a member",
+      "URI" : "/messages/to/:membername",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "messages/from/:membername",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns messages sent by a member",
+      "URI" : "/messages/from/:membername",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Squirrelforce",
+    "methods" : [ {
+      "MethodName" : "squirrelforce/reserve_server",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "query string",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Reserves a sfdc server for a member",
+      "URI" : "/squirrelforce/reserve_server",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "squirrelforce/release_server",
+      "parameters" : [ {
+        "Name" : "reservation_id",
+        "Default" : "",
+        "Location" : "query string",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "reservation id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Releases a sfdc server previously reserved for a member",
+      "URI" : "/squirrelforce/release_server",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "squirrelforce/unleash_squirrel/:submission_deliverable_id",
+      "parameters" : [ {
+        "Name" : "submission_deliverable_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "submission_deliverable_id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Unleash the squirrel within",
+      "URI" : "/squirrelforce/unleash_squirrel/:submission_deliverable_id",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Judging",
+    "methods" : [ {
+      "MethodName" : "judging",
+      "parameters" : [ {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns challenges which currently do not have enough judges",
+      "URI" : "/judging",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "judging/add",
+      "parameters" : [ {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "challenge_id",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "challenge id"
+      }, {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Adds a member as a judge of a challenge",
+      "URI" : "/judging/add",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "judging/outstanding/:membername",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns outstanding scorecards by a member who is a judge of one or more challenges",
+      "URI" : "/judging/outstanding/:membername",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "judging/scorecard/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "judge_membername",
+        "Default" : "",
+        "Location" : "query string",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "judge membername"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns the scorecard for a participant by a judge member",
+      "URI" : "/judging/scorecard/:id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "judging/scorecard/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "answers",
+        "Default" : "{}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "answers"
+      }, {
+        "Name" : "options",
+        "Default" : "{\"delete_scorecard\": \"\", \"scored\": \"\", \"judge_membername\": \"\"}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "N",
+        "Description" : "options"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "PUT",
+      "Synopsis" : "Saves the scorecard for a participant by a judge member",
+      "URI" : "/judging/scorecard/:id",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Communities",
+    "methods" : [ {
+      "MethodName" : "communities",
+      "parameters" : [ {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all communities",
+      "URI" : "/communities",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "communities/:community_id",
+      "parameters" : [ {
+        "Name" : "community_id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "community_id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a specific community",
+      "URI" : "/communities/:community_id",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "communities/add_member",
+      "parameters" : [ {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "community_id",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "community id"
+      }, {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "body",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "membername"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "POST",
+      "Synopsis" : "Adds a member to a community",
+      "URI" : "/communities/add_member",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Leaderboard",
+    "methods" : [ {
+      "MethodName" : "leaderboard",
+      "parameters" : [ {
+        "Name" : ":period",
+        "Default" : "all",
+        "Location" : "query string",
+        "Type" : "enumerated",
+        "Required" : "N",
+        "Description" : ":period",
+        "EnumeratedList" : [ "", "all", "month", "year" ]
+      }, {
+        "Name" : ":category",
+        "Default" : "",
+        "Location" : "query string",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : ":category"
+      }, {
+        "Name" : ":limit",
+        "Default" : "1000",
+        "Location" : "query string",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : ":limit"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns the current public leaderboard",
+      "URI" : "/leaderboard",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "period\t\"all, month, year\"\tall",
+    "methods" : [ ]
+  }, {
+    "name" : "category\t:string",
+    "methods" : [ ]
+  }, {
+    "name" : "limit\t:integer\t1000",
+    "methods" : [ {
+      "MethodName" : "leaderboard/referral",
+      "parameters" : [ {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns the referral leaderboard",
+      "URI" : "/leaderboard/referral",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Stats",
+    "methods" : [ {
+      "MethodName" : "stats",
+      "parameters" : [ {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns the public stats",
+      "URI" : "/stats",
+      "RequiresOAuth" : "N"
+    } ]
+  }, {
+    "name" : "Miscellaneous",
+    "methods" : [ {
+      "MethodName" : "platforms",
+      "parameters" : [ {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all platforms",
+      "URI" : "/platforms",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "technologies",
+      "parameters" : [ {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all technologies",
+      "URI" : "/technologies",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "categories",
+      "parameters" : [ {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all categories",
+      "URI" : "/categories",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "tos",
+      "parameters" : [ {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns all TOS",
+      "URI" : "/tos",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "tos/:id",
+      "parameters" : [ {
+        "Name" : "id",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "id"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a specific TOS",
+      "URI" : "/tos/:id",
       "RequiresOAuth" : "N"
     } ]
   } ]
