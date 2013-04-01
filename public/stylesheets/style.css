@@ -125,11 +125,11 @@ a:active {
 a,
 a:active,
 a:visited {
-  color: #607890;
+  color: #acd;
 }
 
 a:hover {
-  color: #036;
+  color: #cef;
 }
 
 ul,
@@ -278,6 +278,9 @@ html {
 }
 
 body {
+  background-image: url(/images/backgroundTile.png);
+  background-color: #444;
+  color: #ccc;
   width: 960px;
   margin: 15px auto;
   padding-bottom: 20px;
@@ -307,6 +310,31 @@ ul {
 li {
   list-style: none;
   margin-left: 0;
+}
+
+h1.cloudspokes{
+  background: url(/images/CloudSpokes.png) left no-repeat;
+  height: 72px;
+  padding-left: 121px;
+  padding-top: 21px;
+}
+
+.cloudspokes #logo {
+  text-indent: -999em;
+  text-align: left;
+  display: block;
+  background: url(/images/CloudSpokes2.png) no-repeat;
+  float: left;
+  width: 40%;
+}
+
+.cloudspokes .menu{
+  font-weight: normal;
+  float: right;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 23px;
+  text-decoration: none;
 }
 
 .credentials {
@@ -365,12 +393,13 @@ li {
 }
 
 #controls {
+  background: #171717;
+  opacity: .8;
   overflow: hidden;
   *zoom: 1;
   margin-top: 10px;
-  border: 1px solid #999;
   border-width: 1px 0;
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
 }
 
 #controls li {
@@ -381,6 +410,18 @@ li {
 #controls li:not(:first-child) {
   padding-left: 10px;
   border-left: 1px solid #ddd;
+}
+
+#resources{
+  color: #333;
+}
+
+.list-methods a, .expand-methods a, .list-methods a:visited, .expand-methods a:visited {
+  color: #607890;
+}
+
+.list-methods a:hover, .expand-methods a:visited {
+  color: #036;
 }
 
 .endpoint {
@@ -403,18 +444,25 @@ li {
   transition-timing-function: ease;
 }
 
+.endpoint:hover{
+  background-color: #eee ;
+}
+
 .endpoint.expanded {
   background-color: #fff;
 }
 
 .endpoint > .title {
+  /*padding: 20px 0 20px 20px;
+    */
   font-weight: normal;
-  padding: 20px 0 10px 10px;
   overflow: hidden;
   *zoom: 1;
 }
 
 .endpoint > .title .name {
+  padding: 20px 0 20px 20px;
+  width: 73%;
   font-size: 18px;
   float: left;
 }
@@ -426,6 +474,8 @@ li {
 
 .endpoint > .title .actions {
   float: right;
+  margin-top: 25px;
+  margin-right: 16px;
 }
 
 .endpoint > .title .actions li {
@@ -440,6 +490,7 @@ li {
 
 .methods {
   display: none;
+  padding: 0 22px;
 }
 
 .method {
