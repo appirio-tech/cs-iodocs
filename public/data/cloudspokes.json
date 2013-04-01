@@ -2267,27 +2267,27 @@
     "methods" : [ {
       "MethodName" : "leaderboard",
       "parameters" : [ {
-        "Name" : ":period",
+        "Name" : "period",
         "Default" : "all",
         "Location" : "query string",
         "Type" : "enumerated",
         "Required" : "N",
-        "Description" : ":period",
+        "Description" : "period",
         "EnumeratedList" : [ "", "all", "month", "year" ]
       }, {
-        "Name" : ":category",
+        "Name" : "category",
         "Default" : "",
         "Location" : "query string",
         "Type" : "string",
         "Required" : "N",
-        "Description" : ":category"
+        "Description" : "category"
       }, {
-        "Name" : ":limit",
+        "Name" : "limit",
         "Default" : "1000",
         "Location" : "query string",
         "Type" : "integer",
         "Required" : "N",
-        "Description" : ":limit"
+        "Description" : "limit"
       }, {
         "Name" : "oauth_token",
         "Default" : "",
@@ -2300,16 +2300,7 @@
       "Synopsis" : "Returns the current public leaderboard",
       "URI" : "/leaderboard",
       "RequiresOAuth" : "N"
-    } ]
-  }, {
-    "name" : "period\t\"all, month, year\"\tall",
-    "methods" : [ ]
-  }, {
-    "name" : "category\t:string",
-    "methods" : [ ]
-  }, {
-    "name" : "limit\t:integer\t1000",
-    "methods" : [ {
+    }, {
       "MethodName" : "leaderboard/referral",
       "parameters" : [ {
         "Name" : "oauth_token",
