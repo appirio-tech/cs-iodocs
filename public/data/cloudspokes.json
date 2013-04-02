@@ -2114,6 +2114,13 @@
     "methods" : [ {
       "MethodName" : "judging",
       "parameters" : [ {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
         "Name" : "oauth_token",
         "Default" : "",
         "Location" : "header",
