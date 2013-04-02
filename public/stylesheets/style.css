@@ -40,12 +40,14 @@ blockquote:before, blockquote:after, q:before, q:after {
   font-size: 8pt;
   text-align: left;
   float: left;
+  color: #fff;
 }
 
 .f-right {
   font-size: 8pt;
   text-align: right;
   float: right;
+  color: #fff;
 }
 
 ins {
