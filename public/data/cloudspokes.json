@@ -1686,7 +1686,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "TEMP",
+      "Synopsis" : "TEMP Returns the submissions by a member for a specific challenge",
       "URI" : "/participants/:membername/:challenge_id/current_submssions",
       "RequiresOAuth" : "N"
     }, {
@@ -1728,7 +1728,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "TEMP",
+      "Synopsis" : "TEMP Deletes the specified submission",
       "URI" : "/participants/:membername/:challenge_id/delete_submission_url_file",
       "RequiresOAuth" : "N"
     }, {
@@ -1784,7 +1784,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "POST",
-      "Synopsis" : "TEMP",
+      "Synopsis" : "TEMP Adds a submission by a member for the specified challenge",
       "URI" : "/participants/:membername/:challenge_id/submission_url_file",
       "RequiresOAuth" : "N"
     }, {
@@ -1826,7 +1826,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "TEMP",
+      "Synopsis" : "TEMP Returns the specified submission",
       "URI" : "/participants/:membername/:challenge_id/submission/:submission_id",
       "RequiresOAuth" : "N"
     } ]
