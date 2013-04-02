@@ -1571,7 +1571,7 @@
       "URI" : "/participants/:membername/:challenge_id/deliverables",
       "RequiresOAuth" : "N"
     }, {
-      "MethodName" : "participants/:membername/:challenge_id/deliverables",
+      "MethodName" : "participants/:membername/:challenge_id/deliverable",
       "parameters" : [ {
         "Name" : "membername",
         "Default" : "",
@@ -1610,10 +1610,10 @@
       } ],
       "HTTPMethod" : "POST",
       "Synopsis" : "Creates a new deliverable for a participant",
-      "URI" : "/participants/:membername/:challenge_id/deliverables",
+      "URI" : "/participants/:membername/:challenge_id/deliverable",
       "RequiresOAuth" : "N"
     }, {
-      "MethodName" : "participants/:membername/:challenge_id/deliverables",
+      "MethodName" : "participants/:membername/:challenge_id/deliverable",
       "parameters" : [ {
         "Name" : "membername",
         "Default" : "",
@@ -1652,7 +1652,7 @@
       } ],
       "HTTPMethod" : "PUT",
       "Synopsis" : "Updates a deliverable for a participant",
-      "URI" : "/participants/:membername/:challenge_id/deliverables",
+      "URI" : "/participants/:membername/:challenge_id/deliverable",
       "RequiresOAuth" : "N"
     }, {
       "MethodName" : "participants/:membername/:challenge_id/current_submssions",
