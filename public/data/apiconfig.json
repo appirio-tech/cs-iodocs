@@ -1,6 +1,6 @@
 {
     "cloudspokes": {
-         "name": "CloudSpokes API",
+         "name": "CloudSpokes API", 
          "protocol": "http",
          "baseURL": "api-sandbox.cloudspokes.com",
          "publicPath": "/v1",
