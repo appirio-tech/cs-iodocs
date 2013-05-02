@@ -2055,6 +2055,13 @@
         "Required" : "Y",
         "Description" : "membername"
       }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
         "Name" : "oauth_token",
         "Default" : "",
         "Location" : "header",
@@ -2076,6 +2083,13 @@
         "Required" : "Y",
         "Description" : "reservation id"
       }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
         "Name" : "oauth_token",
         "Default" : "",
         "Location" : "header",
@@ -2096,6 +2110,13 @@
         "Type" : "string",
         "Required" : "Y",
         "Description" : "submission_deliverable_id"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
       }, {
         "Name" : "oauth_token",
         "Default" : "",
