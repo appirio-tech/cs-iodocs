@@ -125,7 +125,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -167,7 +167,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -223,7 +223,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -265,7 +265,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -321,7 +321,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -422,7 +422,7 @@
       "MethodName" : "accounts/authenticate",
       "parameters" : [ {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -464,7 +464,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -492,7 +492,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -513,7 +513,7 @@
       "MethodName" : "accounts/create",
       "parameters" : [ {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -576,7 +576,7 @@
       "MethodName" : "accounts/find_by_service",
       "parameters" : [ {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -618,7 +618,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -646,7 +646,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -674,7 +674,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -716,7 +716,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -751,7 +751,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -793,7 +793,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -828,7 +828,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -901,7 +901,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -989,7 +989,7 @@
       "MethodName" : "challenges",
       "parameters" : [ {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1158,7 +1158,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1277,7 +1277,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1305,7 +1305,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1340,7 +1340,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1399,7 +1399,7 @@
         "Description" : "participant_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1434,7 +1434,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1469,7 +1469,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1511,7 +1511,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1553,7 +1553,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1588,7 +1588,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1630,7 +1630,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1672,7 +1672,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1707,7 +1707,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1749,7 +1749,7 @@
         "Description" : "challenge_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1812,7 +1812,7 @@
         "Description" : "submission_id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1836,7 +1836,7 @@
       "MethodName" : "messages",
       "parameters" : [ {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1871,7 +1871,7 @@
         "Description" : "id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1899,7 +1899,7 @@
         "Description" : "id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1934,7 +1934,7 @@
         "Description" : "id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1969,7 +1969,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -1997,7 +1997,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -2025,7 +2025,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -2115,7 +2115,7 @@
       "MethodName" : "judging",
       "parameters" : [ {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -2136,7 +2136,7 @@
       "MethodName" : "judging/add",
       "parameters" : [ {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -2178,7 +2178,7 @@
         "Description" : "membername"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -2206,7 +2206,7 @@
         "Description" : "id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -2241,7 +2241,7 @@
         "Description" : "id"
       }, {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
@@ -2314,7 +2314,7 @@
       "MethodName" : "communities/add_member",
       "parameters" : [ {
         "Name" : "Authorization",
-        "Default" : "Token token=\"6414741ccfb2f6ebc465b2c50edea722\"",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
         "Location" : "header",
         "Type" : "string",
         "Required" : "Y",
