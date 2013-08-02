@@ -93,8 +93,8 @@
       "Synopsis" : "Returns all of the challenges that a member has been involved in",
       "URI" : "/members/:membername/challenges",
       "RequiresOAuth" : "N"
-    }, {
-      "MethodName" : "members/:membername/challenges_as_admin",
+    },  {
+      "MethodName" : "members/:membername/challenges/past",
       "parameters" : [ {
         "Name" : "membername",
         "Default" : "",
@@ -102,6 +102,13 @@
         "Type" : "string",
         "Required" : "Y",
         "Description" : "membername"
+      }, {
+        "Name" : "offset",
+        "Default" : "0",
+        "Location" : "query string",
+        "Type" : "integer",
+        "Required" : "N",
+        "Description" : "offset"
       }, {
         "Name" : "oauth_token",
         "Default" : "",
@@ -111,8 +118,8 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "Returns all of the challenges the member has been judge, contact or notifier",
-      "URI" : "/members/:membername/challenges_as_admin",
+      "Synopsis" : "Returns all of the past challenges that a member has been involved in",
+      "URI" : "/members/:membername/challenges/past",
       "RequiresOAuth" : "N"
     }, {
       "MethodName" : "members/:membername/payments",
@@ -281,34 +288,6 @@
       "HTTPMethod" : "GET",
       "Synopsis" : "Returns the login type for a member",
       "URI" : "/members/:membername/login_type",
-      "RequiresOAuth" : "N"
-    }, {
-      "MethodName" : "members/:membername",
-      "parameters" : [ {
-        "Name" : "membername",
-        "Default" : "",
-        "Location" : "url",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "membername"
-      }, {
-        "Name" : "fields",
-        "Default" : "id,name,school,years_of_experience,gender,time_zone,profile_pic,country,summary_bio,quote,challenges_entered,total_public_money,website,twitter,linkedin,icq,jabber,github,facebook,digg,myspace,total_wins,total_points,total_1st_place,total_2nd_place,total_3st_place,valid_submissions,badgeville_id,active_challenges",
-        "Location" : "query string",
-        "Type" : "string",
-        "Required" : "N",
-        "Description" : "fields"
-      }, {
-        "Name" : "oauth_token",
-        "Default" : "",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "N",
-        "Description" : "oauth token"
-      } ],
-      "HTTPMethod" : "GET",
-      "Synopsis" : "Returns all data for the specified user. This includes their member info, challenges they've been involved in and their recommendations",
-      "URI" : "/members/:membername",
       "RequiresOAuth" : "N"
     }, {
       "MethodName" : "members/:membername",
@@ -2041,93 +2020,6 @@
       "HTTPMethod" : "GET",
       "Synopsis" : "Returns messages sent by a member",
       "URI" : "/messages/from/:membername",
-      "RequiresOAuth" : "N"
-    } ]
-  }, {
-    "name" : "Squirrelforce",
-    "methods" : [ {
-      "MethodName" : "squirrelforce/reserve_server",
-      "parameters" : [ {
-        "Name" : "membername",
-        "Default" : "",
-        "Location" : "query string",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "membername"
-      }, {
-        "Name" : "Authorization",
-        "Default" : "Token token=\"YOUR-API-KEY\"",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "authorization"
-      }, {
-        "Name" : "oauth_token",
-        "Default" : "",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "N",
-        "Description" : "oauth token"
-      } ],
-      "HTTPMethod" : "GET",
-      "Synopsis" : "Reserves a SFDC server for a member",
-      "URI" : "/squirrelforce/reserve_server",
-      "RequiresOAuth" : "N"
-    }, {
-      "MethodName" : "squirrelforce/release_server",
-      "parameters" : [ {
-        "Name" : "reservation_id",
-        "Default" : "",
-        "Location" : "query string",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "reservation id"
-      }, {
-        "Name" : "Authorization",
-        "Default" : "Token token=\"YOUR-API-KEY\"",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "authorization"
-      }, {
-        "Name" : "oauth_token",
-        "Default" : "",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "N",
-        "Description" : "oauth token"
-      } ],
-      "HTTPMethod" : "GET",
-      "Synopsis" : "Releases a SFDC server previously reserved for a member",
-      "URI" : "/squirrelforce/release_server",
-      "RequiresOAuth" : "N"
-    }, {
-      "MethodName" : "squirrelforce/unleash_squirrel/:submission_deliverable_id",
-      "parameters" : [ {
-        "Name" : "submission_deliverable_id",
-        "Default" : "",
-        "Location" : "url",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "submission_deliverable_id"
-      }, {
-        "Name" : "Authorization",
-        "Default" : "Token token=\"YOUR-API-KEY\"",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "authorization"
-      }, {
-        "Name" : "oauth_token",
-        "Default" : "",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "N",
-        "Description" : "oauth token"
-      } ],
-      "HTTPMethod" : "GET",
-      "Synopsis" : "Unleash the squirrel within",
-      "URI" : "/squirrelforce/unleash_squirrel/:submission_deliverable_id",
       "RequiresOAuth" : "N"
     } ]
   }, {
