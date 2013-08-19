@@ -615,6 +615,69 @@
       "URI" : "/accounts/:membername",
       "RequiresOAuth" : "N"
     }, {
+      "MethodName" : "accounts/:membername/preferences",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "GET",
+      "Synopsis" : "Returns a member's notifications preferences.",
+      "URI" : "/accounts/:membername/preferences",
+      "RequiresOAuth" : "N"
+    }, {
+      "MethodName" : "accounts/:membername/preferences",
+      "parameters" : [ {
+        "Name" : "membername",
+        "Default" : "",
+        "Location" : "url",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "membername"
+      }, {
+        "Name" : "preferences",
+        "Default" : "{}",
+        "Location" : "body",
+        "Type" : "json object",
+        "Required" : "Y",
+        "Description" : "preferences"
+      }, {
+        "Name" : "Authorization",
+        "Default" : "Token token=\"YOUR-API-KEY\"",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "Y",
+        "Description" : "authorization"
+      }, {
+        "Name" : "oauth_token",
+        "Default" : "",
+        "Location" : "header",
+        "Type" : "string",
+        "Required" : "N",
+        "Description" : "oauth token"
+      } ],
+      "HTTPMethod" : "PUT",
+      "Synopsis" : "Updates a members' notification preferences.",
+      "URI" : "/accounts/:membername/preferences",
+      "RequiresOAuth" : "N"
+    }, {
       "MethodName" : "accounts/reset_password/:membername",
       "parameters" : [ {
         "Name" : "membername",
@@ -844,58 +907,6 @@
       "HTTPMethod" : "PUT",
       "Synopsis" : "Updates the marketing info for a member",
       "URI" : "/accounts/:membername/marketing",
-      "RequiresOAuth" : "N"
-    } ]
-  }, {
-    "name" : "Preferences",
-    "methods" : [ {
-      "MethodName" : "preferences/:membername",
-      "parameters" : [ {
-        "Name" : "membername",
-        "Default" : "",
-        "Location" : "url",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "membername"
-      }, {
-        "Name" : "oauth_token",
-        "Default" : "",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "N",
-        "Description" : "oauth token"
-      } ],
-      "HTTPMethod" : "GET",
-      "Synopsis" : "Returns a member's preferences",
-      "URI" : "/preferences/:membername",
-      "RequiresOAuth" : "N"
-    }, {
-      "MethodName" : "preferences/:membername",
-      "parameters" : [ {
-        "Name" : "membername",
-        "Default" : "",
-        "Location" : "url",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "membername"
-      }, {
-        "Name" : "Authorization",
-        "Default" : "Token token=\"YOUR-API-KEY\"",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "Y",
-        "Description" : "authorization"
-      }, {
-        "Name" : "oauth_token",
-        "Default" : "",
-        "Location" : "header",
-        "Type" : "string",
-        "Required" : "N",
-        "Description" : "oauth token"
-      } ],
-      "HTTPMethod" : "POST",
-      "Synopsis" : "TODO: Not implemented",
-      "URI" : "/preferences/:membername",
       "RequiresOAuth" : "N"
     } ]
   }, {
