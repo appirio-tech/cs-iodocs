@@ -5,7 +5,7 @@
       "MethodName" : "members",
       "parameters" : [ {
         "Name" : "fields",
-        "Default" : "id,name,profile_pic,summary_bio,challenges_entered,active_challenges,total_wins,total_1st_place,total_2nd_place,total_3st_place,total_public_money",
+        "Default" : "id,name,profile_pic,summary_bio,challenges_entered,active_challenges,total_wins,total_1st_place,total_2nd_place,total_3st_place,total_money",
         "Location" : "query string",
         "Type" : "string",
         "Required" : "N",
@@ -17,7 +17,7 @@
         "Type" : "enumerated",
         "Required" : "N",
         "Description" : "order by",
-        "EnumeratedList" : [ "", "active_challenges desc", "challenges_entered desc", "id", "name", "profile_pic", "summary_bio", "total_1st_place desc", "total_2nd_place desc", "total_3st_place desc", "total_public_money desc", "total_wins desc" ]
+        "EnumeratedList" : [ "", "active_challenges desc", "challenges_entered desc", "id", "name", "profile_pic", "summary_bio", "total_1st_place desc", "total_2nd_place desc", "total_3st_place desc", "total_money desc", "total_wins desc" ]
       }, {
         "Name" : "limit",
         "Default" : "25",
@@ -55,7 +55,7 @@
         "Description" : "keyword"
       }, {
         "Name" : "fields",
-        "Default" : "id,name,profile_pic,summary_bio,challenges_entered,active_challenges,total_wins,total_1st_place,total_2nd_place,total_3st_place,total_public_money",
+        "Default" : "id,name,profile_pic,summary_bio,challenges_entered,active_challenges,total_wins,total_1st_place,total_2nd_place,total_3st_place,total_money",
         "Location" : "query string",
         "Type" : "string",
         "Required" : "N",
@@ -362,12 +362,12 @@
         "Required" : "N",
         "Description" : "total points"
       }, {
-        "Name" : "total_public_money",
+        "Name" : "total_money",
         "Default" : "",
         "Location" : "body",
         "Type" : "integer",
         "Required" : "N",
-        "Description" : "total public money"
+        "Description" : "total money"
       }, {
         "Name" : "total_wins",
         "Default" : "",
