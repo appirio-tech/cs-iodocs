@@ -583,7 +583,7 @@
         "Description" : "oauth token"
       } ],
       "HTTPMethod" : "GET",
-      "Synopsis" : "Finds a user by their membername and service (\"cloudspokes\" or third party)",
+      "Synopsis" : "Finds a user by their logins service and servcie username. If the user logs in with CloudSpokes u/p, the service is \"cloudspokes\" and their service_username is their CloudSpokes membername. For socials logins, the other possible services names are \"github\", \"facebook\",\"twitter\" and \"google_oauth2\". During the OAuth dance with these services, they will return some type of username (e.g., github returns the github username while google_oauth2 will return an email address) which is used for the service_username.",
       "URI" : "/accounts/find_by_service",
       "RequiresOAuth" : "N"
     }, {
