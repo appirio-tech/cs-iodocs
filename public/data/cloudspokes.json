@@ -524,14 +524,14 @@
         "Location" : "body",
         "Type" : "string",
         "Required" : "N",
-        "Description" : "provider"
+        "Description" : "this will be one of the following: github, twitter, facebook, google_oauth2 or cloudspokes"
       }, {
         "Name" : "provider_username",
         "Default" : "",
         "Location" : "body",
         "Type" : "string",
         "Required" : "N",
-        "Description" : "provider username"
+        "Description" : "this will be the corresponding identifier based upon the provider. For cloudspokes, google_oauth2 and facebook this will be their email address from the OAuth process. For github and twitter this will be their username from the OAuth process. "
       }, {
         "Name" : "name",
         "Default" : "",
