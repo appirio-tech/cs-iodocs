@@ -517,28 +517,28 @@
         "Location" : "body",
         "Type" : "string",
         "Required" : "N",
-        "Description" : "password"
+        "Description" : "password is not required with social logins."
       }, {
         "Name" : "provider",
         "Default" : "",
         "Location" : "body",
         "Type" : "string",
         "Required" : "N",
-        "Description" : "this will be one of the following: github, twitter, facebook, google_oauth2 or cloudspokes"
+        "Description" : "this will be one of the following: github, twitter, facebook or google_oauth2. This will be blank for if not using one of the social logins."
       }, {
         "Name" : "provider_username",
         "Default" : "",
         "Location" : "body",
         "Type" : "string",
         "Required" : "N",
-        "Description" : "this will be the corresponding identifier based upon the provider. For cloudspokes, google_oauth2 and facebook this will be their email address from the OAuth process. For github and twitter this will be their username from the OAuth process. "
+        "Description" : "this will be the corresponding identifier based upon the provider. For  google_oauth2 and facebook this will be their email address from the OAuth process. For github and twitter this will be their username from the OAuth process. This will be blank for if not using one of the social logins."
       }, {
         "Name" : "name",
         "Default" : "",
         "Location" : "body",
         "Type" : "string",
         "Required" : "N",
-        "Description" : "name"
+        "Description" : "name defaults to their username if not supplied."
       }, {
         "Name" : "oauth_token",
         "Default" : "",
