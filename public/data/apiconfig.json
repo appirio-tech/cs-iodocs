@@ -2,7 +2,7 @@
     "cloudspokes": {
          "name": "CloudSpokes API", 
          "protocol": "http",
-         "baseURL": "api.cloudspokes.com",
+         "baseURL": "api-sandbox.cloudspokes.com",
          "publicPath": "/v1",
          "auth": "",
          "keyParam": ""
